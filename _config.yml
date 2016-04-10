@@ -1,0 +1,12 @@
+# Site settings
+title: Gustavo Russo's Notebook
+email: GustavoRusso@users.noreply.github.com
+description: > # this means to ignore newlines until "baseurl:"
+  Writing Thoughts Down
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://gustavorusso.com" # the base hostname & protocol for your site
+twitter_username: gustavo_russo
+github_username:  GustavoRusso
+
+# Build settings
+markdown: kramdown
