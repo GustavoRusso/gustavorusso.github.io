@@ -34,9 +34,8 @@ h1, h2, h3, h4, h5, h6,
 p, blockquote, pre,
 ul, ol, dl, figure,
 %vertical-rhythm {
-    margin-bottom: $spacing-unit / 2;
+    margin-bottom: $spacing-unit;
 }
-
 
 
 /**
@@ -53,11 +52,15 @@ img {
  * Figures
  */
 figure > img {
+    margin: 0 auto;
     display: block;
 }
 
 figcaption {
+    text-align: center;
+    color: rgb(36, 75, 169);
     font-size: $small-font-size;
+    margin-bottom: $spacing-unit;
 }
 
 
