@@ -1,0 +1,21 @@
+/**
+ * note
+ */
+ $note-color:      #ffeb3b;
+
+ aside[role="note"] {
+     box-shadow: 0 0 5px 0 $grey-color;
+     border-left: .5em solid $note-color;
+     padding: .75em .75em .75em 1.5em;
+     font-size: $small-font-size;
+     margin-bottom: $spacing-unit / 2;
+
+     h1 {
+       display: inline;
+       font-weight: bold;
+     }
+
+     p {
+       display: inline;
+     }
+}

@@ -24,15 +24,9 @@ if let appSettings = URL(string: UIApplicationOpenSettingsURLString) {
 
 In addition, iOS will show a back button to return to our app:
 
-<figure>
-  <img src="{{ site.baseurl }}/images/2016-08-23-ios-back-to-app-button.png">
-      <figcaption>Example of back button on the top-left corner of the screen</figcaption>
-</figure>
+{% include figure.html fileName="2016-09-26-ios-back-to-app-button.png" description="Example of back button on the top-left corner of the screen" %}
 
-<aside class="note" role="note">
-  <h1>Note:</h1>
-  <p>This redirection will fail if our app hasn't yet created its settings bundle. It could happen if we only use system settings to handle privacy. To avoid this crash, we must request the privacy permissions prior to redirect to settings. This will force iOS to create our app's custom setting.</p>
-</aside>
+{% include note.html caption="Note:" description="This redirection will fail if our app hasn't yet created its settings bundle. It could happen if we only use system settings to handle privacy. To avoid this crash, we must request the privacy permissions prior to redirect to settings. This will force iOS to create our app's custom setting." %}
 
 Starting from iOS 10, this is the only way allowed to redirect to the iOS preferences system.
 
@@ -40,10 +34,7 @@ Starting from iOS 10, this is the only way allowed to redirect to the iOS prefer
 
 Some Apple apps redirect to specific privacy settings. For example, Maps redirects to the Location Services screen:
 
-<figure>
-  <img src="{{ site.baseurl }}/images/2016-08-23-ios-apps-can-navigate-to-specific-settings.png">
-      <figcaption>The Maps app can redirect you directly to the Location Services screen</figcaption>
-</figure>
+{% include figure.html fileName="2016-09-26-ios-apps-can-navigate-to-specific-settings.png" description="The Maps app can redirect you directly to the Location Services screen" %}
 
 Unfortunately we can’t do those redirections like Apple does.
 

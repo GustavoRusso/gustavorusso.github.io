@@ -1,0 +1,10 @@
+<figure>
+  <img src="{{ site.baseurl }}/images/{{ include.fileName }}"
+    {% if include.description %}
+      alt="{{ include.description }}" title="{{ include.description }}"
+    {% endif %}
+    >
+    {% if include.description %}
+      <figcaption>{{ include.description }}</figcaption>
+    {% endif %}
+</figure>
